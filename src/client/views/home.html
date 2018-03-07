@@ -1,0 +1,36 @@
+
+<a ng-href="#/add"><button type="button" class="btn btn-info">Add Inventory</button></a>
+<a ng-href="#/pendinglist" ng-show="{{role != 'Department Manager'}}"><button type="button" class="btn btn-info">Approve Inventory</button></a>
+<a ng-href="#/rejectlist" ng-show="{{role == 'Department Manager'}}"><button type="button" class="btn btn-info">Rejected Inventory</button></a>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>productid</th>
+        <th>productname</th>
+        <th>quantity</th>
+        <th>batchnum</th>
+        <th>batchdate</th>
+        <th>vendor</th>
+        <th>mrp</th>
+       <!--  <th>action</th> -->
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="x in data">
+        <td>{{x.productid}}</td>
+        <td>{{x.productname}}</td>
+        <td>{{x.quantity}}</td>
+        <td>{{x.batchnum}}</td>
+        <td>{{x.batchdate}}</td>
+        <td>{{x.vendor}}</td>
+        <td>{{x.mrp}}</td>
+        <td><button type="button" class="btn btn-success btn-xs" ng-click="edit(x)">Edit</button></td>
+        <td><button type="button" class="btn btn-danger btn-xs"  ng-click="delete(x)">Delete</button></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+

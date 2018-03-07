@@ -1,0 +1,19 @@
+{
+  "name": "pink Blue",
+  "version": "1.0.0",
+  "author": "SANDEEP KUMAR",
+  "description": "A project that gives you a clean starting point",
+  "dependencies": {
+    "angular-route": "^1.6.8",
+    "express": "latest",
+    "jsonwebtoken": "^8.2.0",
+    "mongodb": "^3.0.3",
+    "properties-reader": "0.0.16"
+  },
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "devDependencies": {
+    "angular": "1.5.6"
+  }
+}

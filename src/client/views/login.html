@@ -1,0 +1,20 @@
+
+<h1>Login</h1>
+<!-- Userid: <input type="text" ng-model="userid"><br>
+Password: <input type="password" ng-model="Password"><br>
+<button ng-click="login(userid,Password)">login</button>
+<!-- <p><a href="#/login">Logout</a></a></p> -->
+
+
+ <form class="form-inline" ng-submit="login()" >
+  <div class="form-group">
+    <label for="email">User Id:</label>
+    <input type="text" class="form-control" id="id" ng-model="userid">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" ng-model="password">
+  </div>
+ 
+  <button type="submit" class="btn btn-default">Login</button>
+</form> 

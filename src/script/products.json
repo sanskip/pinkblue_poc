@@ -1,0 +1,39 @@
+/* 1 */
+{
+    "_id" : 1520423997507,
+    "productid" : 1520423997507,
+    "productname" : "mobile",
+    "vendor" : "moto",
+    "mrp" : 6787867,
+    "batchnum" : "m1",
+    "batchdate" : "07-02-2018",
+    "quantity" : 12,
+    "action" : "modify",
+    "status" : "Approved"
+}
+
+/* 2 */
+{
+    "_id" : 1520437750580,
+    "productid" : 1520437750580,
+    "productname" : "mobile",
+    "vendor" : "moto",
+    "mrp" : 5567587,
+    "batchnum" : "11",
+    "batchdate" : "06-03-2018",
+    "quantity" : 11,
+    "status" : "Approved"
+}
+
+/* 3 */
+{
+    "_id" : 1520439574625,
+    "productid" : 1520439574625,
+    "productname" : "mobile",
+    "vendor" : "yuiyui",
+    "mrp" : 565665,
+    "batchnum" : "121",
+    "batchdate" : "06-03-2018",
+    "quantity" : 131,
+    "status" : "Approved"
+}

@@ -1,0 +1,36 @@
+<a ng-href="#/home"><button type="button" class="btn btn-info">Home</button></a>
+<h2>Approval Pending Inventory</h2>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>productid</th>
+        <th>productname</th>
+        <th>quantity</th>
+        <th>batchnum</th>
+        <th>batchdate</th>
+        <th>vendor</th>
+        <th>mrp</th>
+        <th>status</th>
+        <th>action</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="x in data">
+        <td>{{x.productid}}</td>
+        <td>{{x.productname}}</td>
+        <td>{{x.quantity}}</td>
+        <td>{{x.batchnum}}</td>
+        <td>{{x.batchdate}}</td>
+        <td>{{x.vendor}}</td>
+        <td>{{x.mrp}}</td>
+        <td><button type="button" class="btn btn-info btn-xs">{{x.status}}</button></td>
+        <td><button type="button" class="btn btn-info btn-xs">{{x.action}}</button></td>
+        <td><button type="button" class="btn btn-success btn-xs" ng-click="approve(x)">Approve</button></td>
+        <td><button type="button" class="btn btn-danger btn-xs"  ng-click="reject(x)">Reject</button></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+

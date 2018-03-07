@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+  <head>
+  <title>Pink Blue</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+<!-- 
+    <div class="jumbotron"> -->
+      <div class="container">
+    <div class="row" ng-show="showInclude" ng-controller="HeaderController">
+  <div class="col-sm-4"><h1>welcome : {{userid}}</h1></div>
+  <div class="col-sm-4"></div>
+  
+  <div class="col-sm-4" ng-click="logout()"><button type="submit" class="btn btn-danger">Logout</button></div>
+</div> 
+          <div ng-view></div>
+       
+      </div>
+ 
+
+
+    <script src="client/vendor/angular.js"></script>
+    <script src="client/vendor/angular-route.js"></script>
+    <script src="client/vendor/angular-cookies.js"></script>
+    <script src="client/app.js"></script>
+    <script src="client/route/route.js"></script>
+    <script src="client/service/service.js"></script>
+    <script src="client/controller/controllers.js"></script>
+  </body>
+
+</html>

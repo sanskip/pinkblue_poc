@@ -1,0 +1,33 @@
+/* 1 */
+{
+    "_id" : "stockadmin",
+    "username" : "stockadmin",
+    "password" : "stockadmin",
+    "email" : "stockadmin@gmail.com",
+    "roles" : [ 
+        "Store Manager"
+    ]
+}
+
+/* 2 */
+{
+    "_id" : "superadmin",
+    "username" : "superadmin",
+    "password" : "superadmin",
+    "email" : "supperadmin@gmail.com",
+    "roles" : [ 
+        "Department Manager", 
+        "Store Manager"
+    ]
+}
+
+/* 3 */
+{
+    "_id" : "admin",
+    "username" : "admin",
+    "password" : "admin",
+    "email" : "admin@gmail.com",
+    "roles" : [ 
+        "Department Manager"
+    ]
+}
